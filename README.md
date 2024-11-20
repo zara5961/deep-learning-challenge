@@ -3,12 +3,14 @@
 ## Overview of the Analysis
 The purpose of this analysis is to build a binary classifier using a deep learning neural network. This model predicts the success of applicants funded by Alphabet Soup, helping the organization select applicants with the highest likelihood of success in their ventures.
 
-![Project](Images/artificial-neural-networks.jpg)
+![Project](Images/artificial.jpeg)
+
 I worked on developing a *Neural Network model*
 
-![Project](Images/Screenshot pro.jpg)
 ### Data Preprocessing
-- **Target Variable**: `IS_SUCCESSFUL`
+- **Target Variable**:
+  - `IS_SUCCESSFUL`
+
 - **Features**: 
   - `APPLICATION_TYPE`
   - `AFFILIATION`
@@ -19,6 +21,7 @@ I worked on developing a *Neural Network model*
   - `INCOME_AMT`
   - `SPECIAL_CONSIDERATIONS`
   - `ASK_AMT`
+
 - **Removed (Dropped) Variables**: 
   - `EIN`: Identification column not relevant to predictions.
   - `NAME`: Identification column that may introduce noise without adding predictive value.
@@ -32,6 +35,7 @@ format.
   - **Neurons**: Initial configurations used between 30 and 200 neurons per layer.
   - **Hidden Layers**: Multiple attempts with 2-5 layers to balance complexity and training efficiency.
   - **Activation Functions**: `relu` for hidden layers and `sigmoid` for the output layer (binary classification).
+![Project](Images/pro.jpg)
 
 - **Performance**:
   - Initial attempts achieved ~73% accuracy.
